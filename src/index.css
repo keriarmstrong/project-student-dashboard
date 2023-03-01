@@ -66,6 +66,12 @@ padding-right: 2.5%;
     grid-area: "details";
 }
 
+.showMore{
+    color: green;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .expandedDetails{
     overflow: hidden;
     max-height: 0;

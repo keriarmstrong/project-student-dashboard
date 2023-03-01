@@ -4,7 +4,7 @@ export default function StudentCard(props) {
 
     const [selected, setSelected] = useState(null)
     const toggle = (index) => {
-        if (selected == index) {
+        if (selected === index) {
             return setSelected(null)
         }
         setSelected(index)
@@ -15,14 +15,14 @@ export default function StudentCard(props) {
             <div className="student-Info">
 
                 <div className="pfp">
-                    <img src={student.profilePhoto} alt="profile-picture"></img>
+                    <img src={student.profilePhoto} alt="profile"></img>
                 </div>
                 <div className="details">
                     <p>{student.names.preferredName} {student.names.middleName.charAt(0)} {student.names.surname}</p>
                     <p>{student.username}</p>
                     <p>Birthday:{student.dob}</p>
                     <div className="cardToggle" onClick={() => toggle(index)}>
-                        <span><a href="#">{selected === index ? 'Show Less..' : 'Show More...'}</a></span>
+                        <span><p className="showMore">{selected === index ? 'Show Less..' : 'Show More...'}</p></span>
                     </div>
                 </div>
 
