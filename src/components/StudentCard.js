@@ -22,11 +22,11 @@ export default function StudentCard(props) {
                     <p>{student.username}</p>
                     <p>Birthday:{student.dob}</p>
                     <div className="cardToggle" onClick={() => toggle(index)}>
-                        <span><a href="#">{selected == index ? 'Show Less..' : 'Show More...'}</a></span>
+                        <span><a href="#">{selected === index ? 'Show Less..' : 'Show More...'}</a></span>
                     </div>
                 </div>
 
-                <div className={selected == index ? 'expandedDetails.show' : 'expandedDetails'}>
+                <div className={selected === index ? 'expandedDetails.show' : 'expandedDetails'}>
                     <div className="expandedDetailsContainer">
                         <section className="codewars">
                             <h3>Codewars:</h3>
