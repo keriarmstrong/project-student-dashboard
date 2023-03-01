@@ -1,4 +1,4 @@
-import { logDOM } from "@testing-library/react"
+
 import StudentCard from "./StudentCard"
 export default function StudentList(props) {
 
