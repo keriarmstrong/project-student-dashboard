@@ -12,7 +12,7 @@ function App() {
   const studentData = data
   const [studentCount, setStudentCount] = useState(250)
   const [title, setTitle] = useState("All students")
-  const [cardDetails, setCardDetails] = useState("show More...")
+
 
 
   //function to filter the data by cohort season and year
@@ -20,7 +20,7 @@ function App() {
     
     const newArr = data.filter((student) =>
 
-      student.cohort.cohortCode == year
+      student.cohort.cohortCode === year
     )
   //update student array to display filtered year
     setStudentCount(student.length)
