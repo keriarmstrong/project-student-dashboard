@@ -1,0 +1,99 @@
+.App{
+    background-color:darkkhaki;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "h h "
+    "c s "
+    "c s ";
+
+}
+
+.Header{
+    background-color: green;
+    grid-area: h;
+   
+}
+
+.Title{
+    color:white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%
+}
+
+.Cohort{
+    background-color: whitesmoke;
+    grid-area: c;
+    padding-left: 5%;
+    padding-right: 2.5%;
+    list-style: none;
+}
+
+.CohortList{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 2px solid green;
+}
+
+.CohortList:hover {
+    color: yellowgreen;
+}
+
+.StudentList{
+background-color: white;
+grid-area: s;
+padding-left: 2.5%;
+padding-right: 2.5%;
+}
+
+
+.student-Info{
+    display: grid;
+    grid-template-columns: 1fr, 3fr;
+    grid-template-areas: "picture, details";
+    border-style: solid;
+    border-color: green;
+    margin: 5px;
+    padding: 2px;
+}
+.student-Info .pfp{
+    grid-area: "picture";
+}
+.student-Info .details{
+    grid-area: "details";
+}
+
+.expandedDetails{
+    overflow: hidden;
+    max-height: 0;
+}
+
+.expandedDetails.show{
+    overflow: hidden;
+    max-height: auto;
+    
+}
+.expandedDetailsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "codewars scores certs";
+    padding: 1%;
+}
+
+
+.codewars{
+    grid-area: "codewars";
+    padding: 2%;
+}
+.scores{
+    grid-area: "scores";
+    padding: 2%;
+}
+.certs{
+    grid-area: "certs";
+    padding: 2%;
+}
