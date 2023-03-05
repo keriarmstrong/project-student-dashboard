@@ -11,6 +11,7 @@
 }
 
 .Header{
+    position: sticky;
     background-color: green;
     grid-area: h;
    
@@ -19,7 +20,7 @@
 .Title{
     color:white;
     text-align: center;
-    position: sticky;
+    position: relative;
     top: 0;
     width: 100%
 }
@@ -39,7 +40,7 @@
 }
 
 .CohortList:hover {
-    color: yellowgreen;
+    color: rgb(112, 163, 35);
 }
 
 .StudentList{
@@ -68,8 +69,12 @@ padding-right: 2.5%;
 
 .showMore{
     color: green;
+    width: fit-content;
     text-decoration: underline;
     cursor: pointer;
+}
+.showMore:hover{
+color: rgb(112, 163, 35);
 }
 
 .expandedDetails{
@@ -102,4 +107,22 @@ padding-right: 2.5%;
 .certs{
     grid-area: "certs";
     padding: 2%;
+}
+
+.form{
+    border: solid green;
+    margin: 2%;
+    padding: 5px;
+    width: 80%;
+
+}
+
+.btn{
+    margin-top: 2%;
+    color:white;
+    background-color: green;
+}
+
+.github{
+    
 }

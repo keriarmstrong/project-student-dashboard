@@ -8,7 +8,7 @@ export default function StudentList(props) {
        
         <div>
             <div>
-                <h3>{props.title}</h3>
+                <h2>{props.title}</h2>
                 <p>Total Students: {props.studentCount}</p>
             </div>
             <div>

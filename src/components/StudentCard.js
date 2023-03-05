@@ -46,7 +46,20 @@ export default function StudentCard(props) {
                             <p>Resume: {student.certifications.resume ? '✓' : '✘'}</p>
                             <p>LinkedIn: {student.certifications.linkedin ? '✓' : '✘'}</p>
                             <p>Mock Interview: {student.certifications.mockInterview ? '✓' : '✘'}</p>
-                            <p>GitHub: {student.certifications.github ? '✓' : '✘'}</p>
+                            <p className="github">GitHub: {student.certifications.github ? '✓' : <div>✘</div>}</p>
+                        </section>
+                        <section>
+                            <h3>1-on-1 Notes</h3>
+                            <form className="form">
+                                Commenter Name <input type='text'/>
+                                <br></br>
+                                Comment <input type='text'/>
+                                <br></br>
+                                <button className="btn" type='submit'>Add Note</button>
+                            </form>
+                            <section>
+                                <ul></ul>
+                            </section>
                         </section>
                     </div>
                 </div>

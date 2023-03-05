@@ -42,13 +42,13 @@ export default function Cohort(props) {
     return (
         <>
             <div>
-                <h4>Choose a Class by Start Date</h4>
+                <h2>Choose a Class by Start Date</h2>
                 <div className="CohortList">
-                    <li onClick={() => { props.allStudents() }}>All Student</li>
+                    <li onClick={() => { props.allStudents() }}><h3>All Student</h3></li>
                 </div>
             </div>
             <div>
-                {sortedYears(arr)}
+                <h3>{sortedYears(arr)}</h3>
             </div>
         </>
 
